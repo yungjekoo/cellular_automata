@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cellular Automata</title>
+</head>
+<body>
+    <canvas id="id" tabindex="1" width="705" height="705" style="border: 1px solid black; background: white"></canvas>
+    <div id="text"></div>
+    <button id="save">Save</button>
+    <button id="load">Load</button>
+    <button id="start">Start</button>
+    <button id="pause">Pause</button>
+    <button id="reset">Reset</button>
+    <label for="rules">Choose a rule:</label>
+    <select id="rules">
+      <option value=""></option>
+      <option value="rule90">Rule 90</option>
+      <option value="life">Game of Life</option>
+    </select>
+    <label for="config">Choose a configuration:</label>
+    <select id="config">
+      <option value=""></option>
+      <option value="sierpinski">Sierpinski triangle</option>
+      <option value="gosper">Gosper glider gun</option>
+      <option value="simkin">Simkin glider gun</option>
+      <option value="eden">Garden of Eden</option>
+    </select>
+    <table>
+      <tr>
+        <td>Generation</td>
+        <td id="generation"></div>
+      </tr>
+    </table>
+</body>
+<script type="text/javascript" src="http://24.16.255.56:8888/socket.io/socket.io.js"></script>
+<script type="text/javascript" src="./gameengine.js"></script>
+<script type="text/javascript" src="./main.js"></script>
+</html>
