@@ -472,6 +472,11 @@ GameEngine.prototype.setBoard = function(config) {
   {
     // do nothing
   }
+  else if (config === 'switch')
+  {
+    var switchArray = [3688, 3829, 3689, 3830, 3698, 3558, 3840, 3560, 3984, 3985, 3983, 3843];
+    switchArray.forEach(element => this.entities[element].state  = 1);
+  }
   else if (config === 'sierpinski')
   {
     this.entities[71].state = 1;
